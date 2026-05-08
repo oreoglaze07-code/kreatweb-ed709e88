@@ -1,4 +1,7 @@
 import { useEffect } from "react";
+import interiorImg from "@/assets/portfolio-interior-gruszw21.jpg";
+import cafeImg from "@/assets/portfolio-cafe-dfep6unj.jpg";
+import brandImg from "@/assets/portfolio-brand-qiuw0i1o.jpg";
 import "../static-site.css";
 
 const Index = () => {
