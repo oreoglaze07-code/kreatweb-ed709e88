@@ -16,7 +16,7 @@ const Footer = () => {
             href="mailto:hello@kreat_web.com"
             className="text-muted-foreground hover:text-primary transition-colors text-sm font-body"
           >
-            hello@kreat_web.com
+            kreat_web
           </a>
           <a
             href="https://instagram.com/kreat_web"
