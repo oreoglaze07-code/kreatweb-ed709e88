@@ -6,6 +6,14 @@ import "../static-site.css";
 
 const Index = () => {
   useEffect(() => {
+    // Smooth scroll to section (avoids HashRouter 404 on #anchor)
+    (window as any).scrollToSection = function(id: string, e?: Event) {
+      if (e) e.preventDefault();
+      var el = document.getElementById(id);
+      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      (window as any).closeMenu?.();
+    };
+
     // Mobile menu
     (window as any).toggleMenu = function() {
       var m = document.getElementById('mobileMenu')!;
@@ -117,13 +125,13 @@ const Index = () => {
     <!-- NAVBAR -->
     <nav class="site-nav" id="navbar">
       <div class="nav-container">
-        <a href="#" class="nav-logo">KREAT WEB</a>
+        <a href="#" class="nav-logo" onclick="scrollToSection('navbar', event); return false;">KREAT WEB</a>
         <div class="nav-links" id="navLinks">
-          <a href="#work" class="nav-link" onclick="closeMenu()">WORK</a>
-          <a href="#about" class="nav-link" onclick="closeMenu()">ABOUT</a>
-          <a href="#process" class="nav-link" onclick="closeMenu()">PROCESS</a>
-          <a href="#contact" class="nav-link" onclick="closeMenu()">CONTACT</a>
-          <a href="#contact" class="nav-cta-btn" onclick="closeMenu()">Get a Website</a>
+          <a href="#work" class="nav-link" onclick="scrollToSection('work', event)">WORK</a>
+          <a href="#about" class="nav-link" onclick="scrollToSection('about', event)">ABOUT</a>
+          <a href="#process" class="nav-link" onclick="scrollToSection('process', event)">PROCESS</a>
+          <a href="#contact" class="nav-link" onclick="scrollToSection('contact', event)">CONTACT</a>
+          <a href="#contact" class="nav-cta-btn" onclick="scrollToSection('contact', event)">Get a Website</a>
         </div>
         <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" onclick="toggleMenu()">
           <svg id="menuIcon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
@@ -131,11 +139,11 @@ const Index = () => {
         </button>
       </div>
       <div class="mobile-menu" id="mobileMenu">
-        <a href="#work" class="nav-link" onclick="closeMenu()">WORK</a>
-        <a href="#about" class="nav-link" onclick="closeMenu()">ABOUT</a>
-        <a href="#process" class="nav-link" onclick="closeMenu()">PROCESS</a>
-        <a href="#contact" class="nav-link" onclick="closeMenu()">CONTACT</a>
-        <a href="#contact" class="nav-cta-btn" onclick="closeMenu()">Get a Website</a>
+        <a href="#work" class="nav-link" onclick="scrollToSection('work', event)">WORK</a>
+        <a href="#about" class="nav-link" onclick="scrollToSection('about', event)">ABOUT</a>
+        <a href="#process" class="nav-link" onclick="scrollToSection('process', event)">PROCESS</a>
+        <a href="#contact" class="nav-link" onclick="scrollToSection('contact', event)">CONTACT</a>
+        <a href="#contact" class="nav-cta-btn" onclick="scrollToSection('contact', event)">Get a Website</a>
       </div>
     </nav>
 
@@ -148,8 +156,8 @@ const Index = () => {
         <h1 class="hero-title animate-reveal delay-1">We design websites that <span class="text-gradient italic">attract better clients</span></h1>
         <p class="hero-desc animate-reveal delay-2">Premium websites for modern brands and interior designers</p>
         <div class="hero-buttons animate-reveal delay-3">
-          <a href="#work" class="btn-outline">View Work</a>
-          <a href="#contact" class="btn-primary">Get a Website</a>
+          <a href="#work" class="btn-outline" onclick="scrollToSection('work', event)">View Work</a>
+          <a href="#contact" class="btn-primary" onclick="scrollToSection('contact', event)">Get a Website</a>
         </div>
         <div class="hero-stats animate-reveal delay-4">
           <div class="stat"><span class="stat-num">50+</span><span class="stat-label">PROJECTS</span></div>
@@ -339,7 +347,7 @@ const Index = () => {
           <p class="footer-tagline">Premium websites for modern brands</p>
         </div>
         <div class="footer-links">
-          <a href="mailto:hello@kreat_web.com" class="footer-link">hello@kreat_web.com</a>
+          <a href="mailto:hello@kreat_web.com" class="footer-link">kreat_web</a>
           <a href="https://instagram.com/kreat_web" target="_blank" rel="noopener noreferrer" class="footer-link" aria-label="Instagram">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
           </a>
