@@ -300,7 +300,7 @@ const Index = () => {
         <p class="pricing-label">Starting at ₹4,999 for a complete business website. No hidden costs.</p>
         <div class="cta-buttons">
           <a href="https://wa.me/919741698468" target="_blank" rel="noopener noreferrer" class="btn-primary">Chat on WhatsApp</a>
-          <button class="btn-outline" onclick="openBooking()">Book a Call</button>
+          <a href="https://ig.me/m/kreat_web" target="_blank" rel="noopener noreferrer" class="btn-outline">DM on Instagram</a>
         </div>
       </div>
     </section>
