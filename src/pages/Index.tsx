@@ -160,11 +160,11 @@ const Index = () => {
           <a href="#contact" class="btn-primary" onclick="scrollToSection('contact', event)">Get a Website</a>
         </div>
         <div class="hero-stats animate-reveal delay-4">
-          <div class="stat"><span class="stat-num">50+</span><span class="stat-label">PROJECTS</span></div>
+          <div class="stat"><span class="stat-num">3</span><span class="stat-label">Websites Built</span></div>
           <div class="stat-divider"></div>
-          <div class="stat"><span class="stat-num">4.9★</span><span class="stat-label">RATING</span></div>
+          <div class="stat"><span class="stat-num">100%</span><span class="stat-label">Client Satisfaction</span></div>
           <div class="stat-divider"></div>
-          <div class="stat"><span class="stat-num">3 yrs</span><span class="stat-label">EXPERIENCE</span></div>
+          <div class="stat"><span class="stat-num">7-Day</span><span class="stat-label">Delivery</span></div>
         </div>
       </div>
     </section>
@@ -282,23 +282,11 @@ const Index = () => {
       </div>
     </section>
 
-    <!-- TESTIMONIALS -->
+    <!-- SUCCESS STORY -->
     <section class="section">
-      <div class="container max-w-5xl">
-        <div class="section-header">
-          <p class="section-tag">Testimonials</p>
-          <h2 class="section-title">What our <span class="text-gradient italic">clients</span> say</h2>
-        </div>
-        <div class="testimonials-grid">
-          <div class="testimonial-card hover-lift">
-            <p class="testimonial-quote">"Kreat Web completely transformed our online presence. The website they designed for our studio brought in more premium clients within the first month."</p>
-            <div><p class="testimonial-name">Ananya Sharma</p><p class="testimonial-role">INTERIOR DESIGNER</p></div>
-          </div>
-          <div class="testimonial-card hover-lift">
-            <p class="testimonial-quote">"Clean, modern, and exactly what our brand needed. Our café bookings increased significantly after the website launch."</p>
-            <div><p class="testimonial-name">Rohan Mehta</p><p class="testimonial-role">FOUNDER, BREW & CO.</p></div>
-          </div>
-        </div>
+      <div class="container max-w-3xl" style="text-align:center">
+        <h2 class="section-title" style="margin-bottom:1.5rem">Be our next <span class="text-gradient italic">success story.</span></h2>
+        <p style="color:var(--muted-fg);font-weight:300;line-height:1.7;max-width:36rem;margin:0 auto;font-size:1.125rem">We're selectively taking on founding clients at a special rate. No backlog, no junior handoffs — you work directly with the founder, start to finish.</p>
       </div>
     </section>
 
@@ -309,6 +297,7 @@ const Index = () => {
         <p class="section-tag">Ready?</p>
         <h2 class="section-title cta-title">Let's build something <span class="text-gradient italic">better</span></h2>
         <p class="cta-desc">Your brand deserves a premium website. Let's make it happen.</p>
+        <p class="pricing-label">Starting at ₹1,499 for a complete business website. No hidden costs.</p>
         <div class="cta-buttons">
           <a href="https://www.instagram.com/kreat_web/" target="_blank" rel="noopener noreferrer" class="btn-primary">DM on Instagram</a>
           <button class="btn-outline" onclick="openBooking()">Book a Call</button>
