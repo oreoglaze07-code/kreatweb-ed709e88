@@ -177,21 +177,21 @@ const Index = () => {
           <h2 class="section-title">Projects that <span class="text-gradient italic">convert</span></h2>
         </div>
         <div class="portfolio-grid">
-          <div class="portfolio-item hover-lift">
+          <a href="#/work/luxe-interiors" class="portfolio-item hover-lift" style="display:block">
             <div class="portfolio-img-wrap"><img src="${interiorImg}" alt="Luxe Interiors" loading="lazy" width="1280" height="864"/></div>
             <h3 class="portfolio-name">Luxe Interiors</h3>
             <p class="portfolio-cat">INTERIOR DESIGN STUDIO</p>
-          </div>
-          <div class="portfolio-item hover-lift">
+          </a>
+          <a href="#/work/brew-co" class="portfolio-item hover-lift" style="display:block">
             <div class="portfolio-img-wrap"><img src="${cafeImg}" alt="Brew & Co." loading="lazy" width="1280" height="864"/></div>
             <h3 class="portfolio-name">Brew & Co.</h3>
             <p class="portfolio-cat">CAFÉ & LIFESTYLE BRAND</p>
-          </div>
-          <div class="portfolio-item hover-lift">
+          </a>
+          <a href="#/work/minimal-studio" class="portfolio-item hover-lift" style="display:block">
             <div class="portfolio-img-wrap"><img src="${brandImg}" alt="Minimal Studio" loading="lazy" width="1280" height="864"/></div>
             <h3 class="portfolio-name">Minimal Studio</h3>
             <p class="portfolio-cat">MODERN BRAND</p>
-          </div>
+          </a>
         </div>
       </div>
     </section>

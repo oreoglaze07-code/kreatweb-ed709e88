@@ -5,6 +5,9 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Index from "./pages/Index.tsx";
 import NotFound from "./pages/NotFound.tsx";
+import LuxeInteriors from "./pages/work/LuxeInteriors.tsx";
+import BrewCo from "./pages/work/BrewCo.tsx";
+import MinimalStudio from "./pages/work/MinimalStudio.tsx";
 
 const queryClient = new QueryClient();
 
@@ -16,6 +19,9 @@ const App = () => (
       <HashRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/work/luxe-interiors" element={<LuxeInteriors />} />
+          <Route path="/work/brew-co" element={<BrewCo />} />
+          <Route path="/work/minimal-studio" element={<MinimalStudio />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
