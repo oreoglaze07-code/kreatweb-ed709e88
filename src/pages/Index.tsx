@@ -177,21 +177,24 @@ const Index = () => {
           <h2 class="section-title">Projects that <span class="text-gradient italic">convert</span></h2>
         </div>
         <div class="portfolio-grid">
-          <a href="#/work/luxe-interiors" class="portfolio-item hover-lift" style="display:block">
-            <div class="portfolio-img-wrap"><img src="${interiorImg}" alt="Luxe Interiors" loading="lazy" width="1280" height="864"/></div>
-            <h3 class="portfolio-name">Luxe Interiors</h3>
+          <a href="#/interiors" class="portfolio-item hover-lift" style="display:block">
+            <div class="portfolio-img-wrap"><img src="${interiorImg}" alt="Studio Form" loading="lazy" width="1280" height="864"/></div>
+            <h3 class="portfolio-name">Studio Form</h3>
             <p class="portfolio-cat">INTERIOR DESIGN STUDIO</p>
           </a>
-          <a href="#/work/brew-co" class="portfolio-item hover-lift" style="display:block">
-            <div class="portfolio-img-wrap"><img src="${cafeImg}" alt="Brew & Co." loading="lazy" width="1280" height="864"/></div>
-            <h3 class="portfolio-name">Brew & Co.</h3>
-            <p class="portfolio-cat">CAFÉ & LIFESTYLE BRAND</p>
+          <a href="#/restaurant" class="portfolio-item hover-lift" style="display:block">
+            <div class="portfolio-img-wrap"><img src="${cafeImg}" alt="Herb & Olive Garden" loading="lazy" width="1280" height="864"/></div>
+            <h3 class="portfolio-name">Herb & Olive Garden</h3>
+            <p class="portfolio-cat">RESTAURANT & LIFESTYLE BRAND</p>
           </a>
-          <a href="#/work/minimal-studio" class="portfolio-item hover-lift" style="display:block">
-            <div class="portfolio-img-wrap"><img src="${brandImg}" alt="Minimal Studio" loading="lazy" width="1280" height="864"/></div>
-            <h3 class="portfolio-name">Minimal Studio</h3>
-            <p class="portfolio-cat">MODERN BRAND</p>
-          </a>
+          <div class="portfolio-item portfolio-coming-soon" style="display:block;cursor:not-allowed">
+            <div class="portfolio-img-wrap" style="position:relative">
+              <img src="${brandImg}" alt="Atelier Noir" loading="lazy" width="1280" height="864" style="filter:grayscale(100%) brightness(.55)"/>
+              <span class="coming-soon-badge">Coming Soon</span>
+            </div>
+            <h3 class="portfolio-name" style="opacity:.6">Atelier Noir</h3>
+            <p class="portfolio-cat" style="opacity:.6">MODERN BRAND STUDIO</p>
+          </div>
         </div>
       </div>
     </section>
