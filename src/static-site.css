@@ -113,6 +113,16 @@ img { display: block; max-width: 100%; height: auto; }
 .portfolio-item:hover .portfolio-img-wrap img { transform:scale(1.05); }
 .portfolio-name { font-family:var(--font-heading); font-size:1.25rem; color:var(--fg); margin-bottom:.25rem; }
 .portfolio-cat { font-size:.75rem; color:var(--muted-fg); letter-spacing:.1em; font-family:var(--font-body); }
+.portfolio-coming-soon { pointer-events:none; }
+.portfolio-coming-soon .portfolio-img-wrap img { transition:none; }
+.coming-soon-badge {
+  position:absolute; top:1rem; right:1rem;
+  background:hsla(0,0%,5%,.85); color:var(--accent);
+  border:1px solid var(--accent);
+  padding:.4rem .9rem; font-size:.65rem; letter-spacing:.25em;
+  text-transform:uppercase; font-family:var(--font-body);
+  backdrop-filter: blur(6px);
+}
 
 /* ===== FEATURES ===== */
 .features-grid { display:grid; grid-template-columns:1fr; gap:2rem; }
