@@ -85,6 +85,18 @@ const ProjectShowcase = ({
           <h1 className="hero-title">
             <span className="text-gradient italic">{title}</span>
           </h1>
+          {liveUrl && (
+            <div style={{ marginTop: "2rem", display: "flex", justifyContent: "center" }}>
+              <a
+                href={liveUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary"
+              >
+                View Live Project →
+              </a>
+            </div>
+          )}
         </div>
       </section>
 
