@@ -18,6 +18,7 @@ const ProjectShowcase = ({
   mockups,
   bullets,
   accentHsl = "40,30%,70%",
+  liveUrl,
 }: ProjectShowcaseProps) => {
   return (
     <div style={{ background: "var(--bg)", color: "var(--fg)", minHeight: "100vh" }}>
