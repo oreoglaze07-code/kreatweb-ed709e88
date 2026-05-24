@@ -4,7 +4,7 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => ({
-  base: "/kreatweb-ed709e88/",   
+  base: "/kreatweb/",   
 
   server: {
     host: "::",
