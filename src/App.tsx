@@ -19,6 +19,9 @@ const App = () => (
       <HashRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/work/luxe-interiors" element={<LuxeInteriors />} />
+          <Route path="/work/brew-co" element={<BrewCo />} />
+          <Route path="/work/minimal-studio" element={<MinimalStudio />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
