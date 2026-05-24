@@ -8,6 +8,7 @@ export interface ProjectShowcaseProps {
   mockups: string[];
   bullets: { title: string; desc: string }[];
   accentHsl?: string; // optional glow tint
+  liveUrl?: string;
 }
 
 const ProjectShowcase = ({
