@@ -1,4 +1,4 @@
-import ProjectShowcase from "./ProjectShowcase";
+import ProjectShowcase from "../ProjectShowcase";
 
 const LuxeInteriors = () => (
   <ProjectShowcase
